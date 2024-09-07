@@ -1,12 +1,17 @@
-import './App.css';
-import BucketList from './components/BucketList';
+import { Link, Outlet } from 'react-router-dom';
 
-function App() {
+export default function App() {
   return (
-    <div className="bucket-app">
-      <BucketList />
+    <div>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/About">About</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/Contact">Contact</Link></li>
+        </ul>
+      </nav>
+      <Outlet />
     </div>
   );
 }
-
-export default App;
