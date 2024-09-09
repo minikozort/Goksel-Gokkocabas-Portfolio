@@ -5,8 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import Error from './pages/Error';
 import Home from './pages/Home';
-import Contact from './pages/Contact';
 import About from './pages/About';
+import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 
 // Define the accessible routes, and which components respond to which URL
@@ -21,15 +21,15 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/About',
-        element: <About />,
+        path: '/about',
+        element: <Home />,
       },
       {
-        path: '/Projects',
+        path: '/projects',
         element: <Projects />,
       },
       {
-        path: '/Contact',
+        path: '/contact',
         element: <Contact />,
       },
     ],

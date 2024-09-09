@@ -1,38 +1,47 @@
 import React from 'react';
+import MyDailyBlog from '../assets/Pics/My-Daily-Blog.png'
+import TaskManagementApp from '../assets/Pics/Task-Management-App.png'
+import WeatherForecastApp from '../assets/Pics/Weather-Forecast-App.png'
+import MVCMainPage from '../assets/Pics/MVC-Main-Page.png'
+import MyFriendNetwork from '../assets/Pics/My-Friends-Network-Get-All-Users.png'
+import MarvelToMedia from '../assets/Pics/Marvel-to-Media-Webpage.png'
+import CryptoCurrently from '../assets/Pics/Crypto-Currently.png'
+
+
 
 const individualProjects = [
   {
     title: "HTML - CSS - JavaScript",
     link: "https://minikozort.github.io/My-Daily-Blog/",
-    imgSrc: "/Assets/Pics/My-Daily-Blog.PNG",
+    imgSrc: MyDailyBlog,
     imgAlt: "My Daily Blog",
     github: "https://github.com/minikozort/My-Daily-Blog.git"
   },
   {
     title: "HTML - CSS - JavaScript",
     link: "https://minikozort.github.io/Tasks-Management-App/",
-    imgSrc: "/Assets/Pics/Task-Management-App.PNG",
+    imgSrc: TaskManagementApp,
     imgAlt: "Task Management App",
     github: "https://github.com/minikozort/Tasks-Management-App.git"
   },
   {
     title: "HTML - CSS - JavaScript - API",
     link: "https://minikozort.github.io/My-Weather-Forecast-App/",
-    imgSrc: "/Assets/Pics/Weather-Forecast-App.PNG",
+    imgSrc: WeatherForecastApp,
     imgAlt: "Weather Forecast App",
     github: "https://github.com/minikozort/My-Weather-Forecast-App.git"
   },
   {
     title: "Full-Stack App",
     link: "https://tech-blog-mvc-e0ny.onrender.com",
-    imgSrc: "/Assets/Pics/MVC-Main-Page.PNG",
+    imgSrc: MVCMainPage,
     imgAlt: "Tech Blog",
     github: "https://github.com/minikozort/Tech-Blog-MVC.git"
   },
   {
     title: "NoSQL - Express - Node.js",
     link: "https://www.loom.com/share/60e91980c947490e8d766780f90e8bf3?sid=56d4a4ce-342f-4825-817f-52c7e12bd3cc",
-    imgSrc: "/Assets/Pics/My Friends Network Get All Users.PNG",
+    imgSrc: MyFriendNetwork,
     imgAlt: "My Friend's Network",
     github: "https://github.com/minikozort/My-Friend-s-Network.git"
   }
@@ -42,14 +51,14 @@ const groupProjects = [
   {
     title: "HTML - CSS - JavaScript - API",
     link: "https://minikozort.github.io/Marvel-to-Media/",
-    imgSrc: "/Assets/Pics/Marvel-to-Media-Webpage.png",
+    imgSrc: MarvelToMedia,
     imgAlt: "Marvel to Media",
     github: "https://github.com/minikozort/Marvel-to-Media.git"
   },
   {
     title: "JavaScript - Express - Handlebars",
     link: "https://crypto-currently.onrender.com/",
-    imgSrc: "/Assets/Pics/Crypto-Currently.png",
+    imgSrc: CryptoCurrently,
     imgAlt: "Crypto Currently",
     github: "https://github.com/wilsacker/Crypto-Currently.git"
   }
