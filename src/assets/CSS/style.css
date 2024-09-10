@@ -561,6 +561,14 @@ nav.highlight ul li a{
   background-color: #0056b3; /* Darker shade of button color on hover */
 }
 
+nav ul li.active a {
+  background-color: var(--dark-blue); /* Change to your desired background color */
+  color: #000; /* Change to your desired text color */
+  font-weight: bold; /* Optionally make the text bold */
+  padding: 10px; /* Optional: Add some padding for a button-like appearance */
+  border-radius: 5px; /* Optional: Rounding for a cleaner look */
+}
+
 
 
 

@@ -13,16 +13,16 @@ function NavTabs(props) {
       <nav id="navigation-bar-links" className={(props.highlighted ? 'highlight': '')}>
         <ul>
           {/* Navigation links */}
-          <li>
+          <li className={currentPage === '/about' ? 'active' : ''}>
             <Link to="/about">About</Link> {/* Link to the About page */}
           </li>
-          <li>
+          <li className={currentPage === '/projects' ? 'active' : ''}>
             <Link to="/projects">Projects</Link> {/* Link to the Projects page */}
           </li>
-          <li>
+          <li className={currentPage === '/contact' ? 'active' : ''}>
             <Link to="/contact">Contact me</Link> {/* Link to the Contact page */}
           </li>
-          <li>
+          <li className={currentPage === '/resume' ? 'active' : ''}>
             <Link to="/resume">Resume</Link> {/* Link to the Resume page */}
           </li>
         </ul>
