@@ -27,6 +27,7 @@ body {
 
 /* Resume Container */
 .resume-container {
+  letter-spacing: 1px;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -47,6 +48,7 @@ body {
 
 /* Skills Section */
 .skills-section {
+  letter-spacing: 1px;
   margin-bottom: 20px;
   background-color: var(--beige); /* Consistent background color */
   border-radius: 8px; /* Rounded corners */
@@ -120,10 +122,11 @@ body {
 
 /* Contact Page */
 form {
+  
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: var(--beige);
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: 'Arial', sans-serif;
@@ -138,23 +141,23 @@ label {
 }
 
 
-
-/* Input field and textarea styling */
 input[type="text"], input[type="email"], textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--beige);
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #fff;
-  transition: border-color 0.3s ease;
+  background-color: var(--beige);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for box-shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More visible shadow for non-focused state */
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   border-color: #6a5acd; /* Custom focus color (adjust as needed) */
   outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Darker and more pronounced shadow on focus */
 }
 
 /* Textarea specific styles */
@@ -167,7 +170,7 @@ textarea {
 button[type="submit"] {
   display: inline-block;
   padding: 12px 25px;
-  background-color: #6a5acd; /* Custom button color */
+  background-color: var(--dark-blue); /* Custom button color */
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -177,8 +180,11 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #5b4acb; /* Darken on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a glowing effect */
+  transform: scale(1.05); /* Slightly increase the size */
 }
+
+
 
 /* Centering the Contact Page */
 .contact-container {
@@ -191,6 +197,7 @@ button[type="submit"]:hover {
 }
 
 .contact-title {
+  letter-spacing: 1px;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
@@ -231,6 +238,7 @@ h1 {
 }
 
 h2 {
+  letter-spacing: 1px;
   margin-top: 2px;
   font-size: 120%; /* Adjusted font size for smaller screens */
 }
@@ -263,6 +271,7 @@ article {
 }
 
 article h2 {
+  letter-spacing: 1px;
   background-color: var(--dark-blue);
   text-align: center;
   font-size: 25px; /* Adjusted font size for smaller screens */
@@ -274,6 +283,7 @@ article h2 {
 }
 
 main p {
+  letter-spacing: 1px;
   padding: 5px;
   max-width: 90%; /* Adjusted width for readability */
   margin: 0 auto; /* Center the element horizontally */
@@ -310,15 +320,34 @@ footer span {
   justify-content: center;
   padding: 5px;
 }
-
-.Links {
-  display: inline-flex;
-  justify-content: center;
-  padding: 10px;
-  background-color: var(--beige);
-  color: var(--dark-blue);
-  font-size: 150%;
+#ptag{
+  color: #000000;
+  margin: 0 auto 20px auto;
+  max-width: 80%;
+  letter-spacing: 1px;
 }
+.Links {
+  text-decoration: none; /* Remove underline from links */
+  color: #000; /* Icon color, adjust as needed */
+  font-size: 1.5rem; /* Adjust size of icons */
+  margin: 0 10px; /* Spacing between icons */
+}
+
+.Links:hover {
+  color: #1d6c8b; /* Change color on hover */
+}
+
+ul {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  display: flex; /* Align icons in a row */
+  justify-content: center; /* Center align */
+}
+
+li {
+  margin: 0 10px; /* Spacing around list items */
+}
+
 
 footer h5 {
   display: block; /* Ensure block-level display */
@@ -483,6 +512,55 @@ nav.highlight ul li a{
   text-decoration: none; /* Remove underline */
   color: inherit; /* Inherit text color from parent */
 }
+/* General styling for the error page container */
+#error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f2f2f2; /* Light gray background for the page */
+  color: #333; /* Dark text color for readability */
+  text-align: center; /* Center align text */
+  padding: 20px;
+}
+
+/* Styling for the main error heading */
+#error-page h1 {
+  font-size: 4rem; /* Large font size for the main heading */
+  margin-bottom: 20px;
+  color: #d9534f; /* Bootstrap danger color for a more prominent error appearance */
+}
+
+/* Styling for the error message paragraphs */
+#error-page p {
+  font-size: 1.25rem; /* Slightly larger text for better readability */
+  margin: 10px 0;
+}
+
+/* Italic text styling for the error details */
+#error-page i {
+  color: #555; /* Slightly lighter color for the error details */
+}
+
+/* Optional: Add a button to redirect or navigate away */
+#error-page button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+#error-page button:hover {
+  background-color: #0056b3; /* Darker shade of button color on hover */
+}
+
 
 
 

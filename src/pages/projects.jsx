@@ -8,9 +8,7 @@ import MarvelToMedia from '../assets/Pics/Marvel-to-Media-Webpage.png';
 import CryptoCurrently from '../assets/Pics/Crypto-Currently.png';
 import NoteTaker from '../assets/Pics/Note-Taker-Notes-Index-Page.png';
 
-
-
-
+// Array of individual projects with their details
 const individualProjects = [
   {
     title: "HTML - CSS - JavaScript",
@@ -56,6 +54,7 @@ const individualProjects = [
   }  
 ];
 
+// Array of group projects with their details
 const groupProjects = [
   {
     title: "HTML - CSS - JavaScript - API",
@@ -71,42 +70,50 @@ const groupProjects = [
     imgAlt: "Crypto Currently",
     github: "https://github.com/wilsacker/Crypto-Currently.git"
   }
-  
 ];
 
 export default function Projects() {
   return (
     <>
+      {/* Header for the projects section */}
       <header className="projects">
         <h1 className="projects-header">Welcome to my projects page!</h1>
-        <p className="projects-ptag">You can see my journey as a software engineer during the bootcamp experience. Please feel free to hop from project to project.</p>
+        <p className="projects-ptag">
+          You can see my journey as a software engineer during the bootcamp experience. Please feel free to hop from project to project.
+        </p>
       </header>
 
+      {/* Individual Projects Section */}
       <div>
         <h1 className="individual-project-title">Individual Projects</h1>
         <section className="indent-2">
           {individualProjects.map((project, index) => (
             <div className="content" key={index}>
               <h2>{project.title}</h2>
-              <a href={project.link}>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img className="img2" src={project.imgSrc} alt={project.imgAlt} />
               </a>
-              <a className="github" href={project.github} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              <a className="github" href={project.github} target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github"></i> {/* Font Awesome GitHub icon */}
+              </a>
             </div>
           ))}
         </section>
       </div>
 
+      {/* Group Projects Section */}
       <section className="group-projects">
         <h1 className="group-project-title">Group Projects</h1>
         <div className="indent-2">
           {groupProjects.map((project, index) => (
             <div className="content" key={index}>
               <h2>{project.title}</h2>
-              <a href={project.link}>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img className="img2" src={project.imgSrc} alt={project.imgAlt} />
               </a>
-              <a className="github" href={project.github} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              <a className="github" href={project.github} target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github"></i> {/* Font Awesome GitHub icon */}
+              </a>
             </div>
           ))}
         </div>

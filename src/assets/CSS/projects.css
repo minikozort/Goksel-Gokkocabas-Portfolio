@@ -12,6 +12,7 @@ body {
     background-color: #b4aea0; /* Light beige background */
 }
 
+/* Section styles */
 section {
     margin: 0 auto;
     max-width: 95%;
@@ -23,7 +24,6 @@ header {
     background-color: #1d6c8b; /* Dark blue background */
     color: var(--beige);
     padding: 20px 10px; /* Adjust padding as needed */
-    
 }
 
 header h1 {
@@ -38,21 +38,17 @@ header p {
     width: 100%; 
 }
 
+/* Projects section styles */
 .projects {
     display: block; /* Ensure header is a block-level element */
     width: 80%; /* Make sure the header takes the full width */
     text-align: center;
     margin: 0 auto;
     margin-top: 5px;
-    background-color: var(--beige); /* Dark blue background */
-    color: #030101;
+    background-color: var(--beige); /* Beige background */
+    color: #030101; /* Text color */
     padding: 20px 10px; /* Adjust padding as needed */
     box-sizing: border-box; /* Ensure padding is included in width calculation */
-}
-
-.projects-header {
-    font-size: 2.5rem; 
-    margin: 0 0 15px 0; /* Space below h1 */
 }
 
 .projects-ptag {
@@ -63,6 +59,15 @@ header p {
     max-width: 800px; /* Optional: Set a max width for better readability */
 }
 
+/* FontAwesome icon styles */
+.fab {
+    font-size: 20px;
+}
+
+.fab:hover {
+    transform: scale(2) translateZ(0) perspective(700px) rotateX(0); 
+    z-index: 2;
+}
 
 /* Section for projects */
 .indent-2 {
@@ -78,14 +83,14 @@ header p {
     width: 300px; /* Adjust width as needed */
     height: 300px; /* Adjust height as needed */
     padding: 5px;
-    background-color: #1d6c8b; /* White background */
-    border: 1px solid #030101; /* Light gray border */
+    background-color: #1d6c8b; /* Dark blue background */
+    border: 1px solid #030101; /* Dark border */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
     text-align: center;
 }
 
-/* GitHub repository link */
+/* GitHub repository link styles */
 .github {
     position: absolute;
     bottom: 0;
@@ -121,14 +126,14 @@ header p {
     z-index: 2;
 }
 
-/* Group project title */
+/* Group project title styles */
 .group-projects .group-project-title {
     text-align: center; /* Center align group project title */
     font-size: 1.8rem; 
     margin: 10px;
 }
 
-/* Individual project title */
+/* Individual project title styles */
 .individual-project-title {
     text-align: center; /* Center align individual project title */
     font-size: 1.8rem; 

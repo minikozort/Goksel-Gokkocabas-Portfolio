@@ -3,10 +3,14 @@ import React from 'react';
 export default function Resume() {
   return (
     <div className="resume-container">
+      {/* Title of the resume section */}
       <h2 className="resume-title">Skills</h2>
+      
+      {/* Section for coding skills */}
       <div className="skills-section">
         <h3 className="section-title">Coding</h3>
         <ul className="skill-list">
+          {/* List of coding skills */}
           <li className="skill-item">HTML</li>
           <li className="skill-item">CSS</li>
           <li className="skill-item">JavaScript</li>
@@ -21,9 +25,12 @@ export default function Resume() {
           <li className="skill-item">RESTful API</li>
         </ul>
       </div>
+      
+      {/* Section for professional skills */}
       <div className="skills-section">
         <h3 className="section-title">Professional Skills</h3>
         <ul className="skill-list">
+          {/* List of professional skills */}
           <li className="skill-item">Communication</li>
           <li className="skill-item">Teamwork</li>
           <li className="skill-item">Leadership</li>
@@ -35,6 +42,8 @@ export default function Resume() {
           <li className="skill-item">Marketing</li>
         </ul>
       </div>
+      
+      {/* Section to download the resume */}
       <div className="resume-download">
         <ul>
           <li>
