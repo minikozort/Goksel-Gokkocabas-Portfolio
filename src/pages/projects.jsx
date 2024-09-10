@@ -6,6 +6,7 @@ import MVCMainPage from '../assets/Pics/MVC-Main-Page.png';
 import MyFriendNetwork from '../assets/Pics/My-Friends-Network-Get-All-Users.png';
 import MarvelToMedia from '../assets/Pics/Marvel-to-Media-Webpage.png';
 import CryptoCurrently from '../assets/Pics/Crypto-Currently.png';
+import NoteTaker from '../assets/Pics/Note-Taker-Notes-Index-Page.png';
 
 
 
@@ -33,6 +34,13 @@ const individualProjects = [
     github: "https://github.com/minikozort/My-Weather-Forecast-App.git"
   },
   {
+    title: "JavaScript - Node.js - Express",
+    link: "https://note-taker-2plt.onrender.com",
+    imgSrc: NoteTaker,
+    imgAlt: "Note Taker",
+    github: "https://github.com/minikozort/Note-Taker"
+  },
+  {
     title: "Full-Stack App",
     link: "https://tech-blog-mvc-e0ny.onrender.com",
     imgSrc: MVCMainPage,
@@ -45,7 +53,7 @@ const individualProjects = [
     imgSrc: MyFriendNetwork,
     imgAlt: "My Friend's Network",
     github: "https://github.com/minikozort/My-Friend-s-Network.git"
-  }
+  }  
 ];
 
 const groupProjects = [
@@ -63,14 +71,15 @@ const groupProjects = [
     imgAlt: "Crypto Currently",
     github: "https://github.com/wilsacker/Crypto-Currently.git"
   }
+  
 ];
 
 export default function Projects() {
   return (
     <>
       <header className="projects">
-        <h1>Welcome to my projects page!</h1>
-        <p>You can see my journey as a software engineer during the bootcamp experience. Please feel free to hop from project to project.</p>
+        <h1 className="projects-header">Welcome to my projects page!</h1>
+        <p className="projects-ptag">You can see my journey as a software engineer during the bootcamp experience. Please feel free to hop from project to project.</p>
       </header>
 
       <div>

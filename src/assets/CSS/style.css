@@ -22,23 +22,103 @@ body {
   width: 70%;
   
 }
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: disc; /* Keeps the bullet points */
-  padding-left: 20px; /* Adjust to ensure bullets are visible */
+
+
+
+/* Resume Container */
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--beige); /* Light gray background for the resume section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
 }
 
-.skill-list li {
-  flex: 1 1 30%; /* Adjust the width to allow 3 per row */
-  margin: 5px 10px;
-  min-width: 150px; /* Minimum width to maintain proper sizing */
+/* Resume Title */
+.resume-title {
+  text-align: center;
+  font-size: 2rem;
+  padding: 4px;
+  margin-bottom: 20px;
+  color: #f9f9f9; 
+  background-color: var(--dark-blue);
 }
 
-.skill-list h3 {
+/* Skills Section */
+.skills-section {
+  margin-bottom: 20px;
+  background-color: var(--beige); /* Consistent background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Consistent shadow effect */
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  padding: 5px;
+  padding-left: 10px;
   margin-bottom: 10px;
+  color: #f9f9f9;
+  background-color: var(--dark-blue);
 }
 
+/* Skill List */
+.skill-list {
+  list-style-type: none; /* Remove default list bullets */
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to the next line */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Skill Item */
+.skill-item {
+  font-size: 1rem;
+  margin: 5px;
+  background-color: var(--light-blue); /* Light blue background for list items */
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  text-align: center; /* Center text inside the item */
+  flex: 1 1 30%; /* Flex-grow and flex-basis for responsiveness */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item:hover {
+  background-color: var(--blue); /* Darker blue background on hover */
+  color: #ffffff; /* White text on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Download Resume */
+.resume-download {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-link {
+  font-size: 1rem;
+  color: #1d6c8b; /* Dark blue color for the link */
+  text-decoration: none;
+  border: 2px solid #1d6c8b;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: var(--beige); /* White background for the button */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-link:hover {
+  background-color: #1d6c8b; /* Dark blue background on hover */
+  color: #ffffff; /* White text on hover */
+}
+
+
+
+
+
+
+/* Contact Page */
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -56,6 +136,8 @@ label {
   margin-bottom: 5px;
   color: #333;
 }
+
+
 
 /* Input field and textarea styling */
 input[type="text"], input[type="email"], textarea {
@@ -97,6 +179,29 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #5b4acb; /* Darken on hover */
 }
+
+/* Centering the Contact Page */
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--beige);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f9f9f9; 
+  background-color: var(--dark-blue);
+}
+
+.contact-form {
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   form {
     padding: 15px;
@@ -210,8 +315,8 @@ footer span {
   display: inline-flex;
   justify-content: center;
   padding: 10px;
-  background-color: #044e29;
-  color: #79bbf8;
+  background-color: var(--beige);
+  color: var(--dark-blue);
   font-size: 150%;
 }
 

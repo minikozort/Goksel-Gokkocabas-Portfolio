@@ -21,20 +21,48 @@ section {
 header {
     text-align: center;
     background-color: #1d6c8b; /* Dark blue background */
-    color: white;
-    padding: 10px; /* Adjust padding as needed */
+    color: var(--beige);
+    padding: 20px 10px; /* Adjust padding as needed */
+    
 }
 
 header h1 {
     font-size: 2.5rem; 
-    margin-bottom: 10px;
+    margin: 0 0 15px 0; /* Space below h1 */
 }
 
 header p {
     font-size: 1.2rem; 
     line-height: 1.6;
-    margin-bottom: 20px; 
+    margin: 0 auto 20px auto;
+    width: 100%; 
 }
+
+.projects {
+    display: block; /* Ensure header is a block-level element */
+    width: 80%; /* Make sure the header takes the full width */
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: var(--beige); /* Dark blue background */
+    color: #030101;
+    padding: 20px 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.projects-header {
+    font-size: 2.5rem; 
+    margin: 0 0 15px 0; /* Space below h1 */
+}
+
+.projects-ptag {
+    font-size: 1.2rem; 
+    line-height: 1.6;
+    margin: 0 auto 20px auto; /* Center p horizontally and add margin below */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Optional: Set a max width for better readability */
+}
+
 
 /* Section for projects */
 .indent-2 {
@@ -93,7 +121,6 @@ header p {
     z-index: 2;
 }
 
-
 /* Group project title */
 .group-projects .group-project-title {
     text-align: center; /* Center align group project title */
@@ -107,7 +134,6 @@ header p {
     font-size: 1.8rem; 
     margin: 10px; 
 } 
-
 
 /* Mobile (up to 767px) */
 @media only screen and (max-width: 767px) {
@@ -127,7 +153,7 @@ header p {
         gap: 10px;
     }
 
-    .indent-2 h2{
+    .indent-2 h2 {
         font-size: 1rem;
         margin-bottom: 10px;
     }
@@ -184,7 +210,8 @@ header p {
         height: 250px;
         margin-bottom: 30px;
     }
-    .indent-2 h2{
+
+    .indent-2 h2 {
         font-size: 1rem;
         margin-bottom: 10px;
     }
@@ -211,4 +238,3 @@ header p {
         margin-bottom: 10px;
     }
 }
-

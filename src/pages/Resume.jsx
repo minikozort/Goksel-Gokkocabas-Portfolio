@@ -1,47 +1,53 @@
 import React from 'react';
 
-export default function Resume(){
-   <div>
-    <h2>Skills</h2>
-    <div>
-        <h3>Coding</h3>
-    <ul className="skill-list" >
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>NoSQL</li>
-        <li>PWA (Progressive Web App)</li>
-        <li>MongoDB</li>
-        <li>React</li>
-        <li>MERN</li>
-        <li>RESTful API</li>
-    </ul>
-    </div>
-    <div>
-        <h3>Professional Skills</h3>
+export default function Resume() {
+  return (
+    <div className="resume-container">
+      <h2 className="resume-title">Skills</h2>
+      <div className="skills-section">
+        <h3 className="section-title">Coding</h3>
         <ul className="skill-list">
-        <li>Communication</li>
-        <li>Teamwork</li>
-        <li>Leadership</li>
-        <li>Microsoft Office Suite</li>
-        <li>Enterprise Systems (IFS , SAP)</li>
-        <li>Inventory</li>
-        <li>Operations</li>
-        <li>Supply Chain</li>
-        <li>Marketing</li>
+          <li className="skill-item">HTML</li>
+          <li className="skill-item">CSS</li>
+          <li className="skill-item">JavaScript</li>
+          <li className="skill-item">Node.js</li>
+          <li className="skill-item">Express</li>
+          <li className="skill-item">PostgreSQL</li>
+          <li className="skill-item">NoSQL</li>
+          <li className="skill-item">PWA (Progressive Web App)</li>
+          <li className="skill-item">MongoDB</li>
+          <li className="skill-item">React</li>
+          <li className="skill-item">MERN</li>
+          <li className="skill-item">RESTful API</li>
         </ul>
-    </div>
-    <div>
-        <li>
-        <a href="https://drive.google.com/uc?export=download&id=1XcRe5N5S9DcQqymq8w1Z3NfXjPQCRjS0"
-          download
-        >
-          Download Resume
-        </a>
-      </li>
+      </div>
+      <div className="skills-section">
+        <h3 className="section-title">Professional Skills</h3>
+        <ul className="skill-list">
+          <li className="skill-item">Communication</li>
+          <li className="skill-item">Teamwork</li>
+          <li className="skill-item">Leadership</li>
+          <li className="skill-item">Microsoft Office Suite</li>
+          <li className="skill-item">Enterprise Systems (IFS, SAP)</li>
+          <li className="skill-item">Inventory</li>
+          <li className="skill-item">Operations</li>
+          <li className="skill-item">Supply Chain</li>
+          <li className="skill-item">Marketing</li>
+        </ul>
+      </div>
+      <div className="resume-download">
+        <ul>
+          <li>
+            <a
+              className="download-link"
+              href="https://drive.google.com/uc?export=download&id=1XcRe5N5S9DcQqymq8w1Z3NfXjPQCRjS0"
+              download
+            >
+              Download Resume
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
+  );
 }
