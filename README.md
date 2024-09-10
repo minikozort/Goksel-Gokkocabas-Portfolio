@@ -18,4 +18,4 @@ Please click on the deployed link in order to open the application. You can use 
 
 
 Github Repository : https://github.com/minikozort/Goksel-Gokkocabas-Portfolio.git
-Deployed Link : 
+Deployed Link : https://main--gokselgokkocabasportfolio.netlify.app/
