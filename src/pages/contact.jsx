@@ -7,15 +7,29 @@ export default function Contact() {
     message: ''
   });
 
+  // Handles changes in form input fields
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  // Handles form submission
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // Process form submission (e.g., send formData to an API or email service)
-    console.log('Form submitted:', formData);
+    e.preventDefault(); // Prevent form from refreshing the page
+    if (formData.name && formData.email && formData.message) {
+      console.log('Form submitted:', formData); // Log form data to the console
+      alert('Form submitted successfully!'); // Optional success message
+
+      // Clear form after submission
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
+    } else {
+      console.log('Form not complete');
+      alert('Please fill out all fields.');
+    }
   };
 
   return (
@@ -56,15 +70,6 @@ export default function Contact() {
         <br />
         <button type="submit">Submit</button>
       </form>
-      <br />
-      <li>
-        <a
-          href="https://drive.google.com/uc?export=download&id=1XcRe5N5S9DcQqymq8w1Z3NfXjPQCRjS0"
-          download
-        >
-          Download Resume
-        </a>
-      </li>
     </div>
   );
 }

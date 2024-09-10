@@ -7,6 +7,7 @@ import Error from './pages/Error';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
+import Resume from './pages/Resume';
 
 import './assets/CSS/reset.css';
 import './assets/CSS/style.css';
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/resume',
+        element: <Resume />,
       },
     ],
   },
