@@ -11,7 +11,7 @@ export default function App() {
     <div>
       <NavTabs highlighted={highlighted}/>
       <main>
-        <Outlet />
+        <Outlet context = {[highlighted, setHighlighted]}/>
       </main>
     </div>
   );

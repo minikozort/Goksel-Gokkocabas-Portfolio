@@ -1,11 +1,12 @@
 import React from 'react';
-import MyDailyBlog from '../assets/Pics/My-Daily-Blog.png'
-import TaskManagementApp from '../assets/Pics/Task-Management-App.png'
-import WeatherForecastApp from '../assets/Pics/Weather-Forecast-App.png'
-import MVCMainPage from '../assets/Pics/MVC-Main-Page.png'
-import MyFriendNetwork from '../assets/Pics/My-Friends-Network-Get-All-Users.png'
-import MarvelToMedia from '../assets/Pics/Marvel-to-Media-Webpage.png'
-import CryptoCurrently from '../assets/Pics/Crypto-Currently.png'
+import MyDailyBlog from '../assets/Pics/My-Daily-Blog.png';
+import TaskManagementApp from '../assets/Pics/Task-Management-App.png';
+import WeatherForecastApp from '../assets/Pics/Weather-Forecast-App.png';
+import MVCMainPage from '../assets/Pics/MVC-Main-Page.png';
+import MyFriendNetwork from '../assets/Pics/My-Friends-Network-Get-All-Users.png';
+import MarvelToMedia from '../assets/Pics/Marvel-to-Media-Webpage.png';
+import CryptoCurrently from '../assets/Pics/Crypto-Currently.png';
+
 
 
 
@@ -66,7 +67,7 @@ const groupProjects = [
 
 export default function Projects() {
   return (
-    <div>
+    <>
       <header className="projects">
         <h1>Welcome to my projects page!</h1>
         <p>You can see my journey as a software engineer during the bootcamp experience. Please feel free to hop from project to project.</p>
@@ -101,6 +102,6 @@ export default function Projects() {
           ))}
         </div>
       </section>
-    </div>
+    </>
   );
 }
