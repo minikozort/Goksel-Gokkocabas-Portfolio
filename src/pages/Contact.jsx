@@ -30,6 +30,13 @@ export default function ContactPage() {
 
     // Handle form submission logic here (e.g., send form data to a server)
     console.log('Form submitted successfully:', formData);
+
+    // Reset the form
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
   };
 
   return (
