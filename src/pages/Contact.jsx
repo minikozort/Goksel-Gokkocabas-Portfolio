@@ -21,7 +21,15 @@ export default function ContactPage() {
   // Handle form submission
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent default form submission behavior
+    
+    // Check if all fields are filled
+    if (!formData.name || !formData.email || !formData.message) {
+      alert('Please fill in all fields before submitting.');
+      return;
+    }
+
     // Handle form submission logic here (e.g., send form data to a server)
+    console.log('Form submitted successfully:', formData);
   };
 
   return (
