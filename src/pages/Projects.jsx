@@ -7,11 +7,15 @@ import MyFriendNetwork from '../assets/Pics/My-Friends-Network-Get-All-Users.png
 import MarvelToMedia from '../assets/Pics/Marvel-to-Media-Webpage.png';
 import CryptoCurrently from '../assets/Pics/Crypto-Currently.png';
 import NoteTaker from '../assets/Pics/Note-Taker-Notes-Index-Page.png';
+import Regex from '../assets/Pics/Password-Regex-Tutorial.png';
+import Jade from '../assets/Pics/JATE-Main-Page.png';
+import BookSearch from '../assets/Pics/Book-Search-Main-Page.png';
+import TasteVoyage from '../assets/Pics/TasteVoyage.jpg';
 
 // Array of individual projects with their details
 const individualProjects = [
   {
-    title: "HTML - CSS - JavaScript",
+    title: "HTML - CSS - JavaScript",   
     link: "https://minikozort.github.io/My-Daily-Blog/",
     imgSrc: MyDailyBlog,
     imgAlt: "My Daily Blog",
@@ -39,6 +43,13 @@ const individualProjects = [
     github: "https://github.com/minikozort/Note-Taker"
   },
   {
+    title: "Regex Tutorial",
+    link: "https://gist.github.com/minikozort/74f686920da289a06d1e950a7209e6d9",
+    imgSrc: Regex,
+    imgAlt: "Regex Tutorial",
+    github: "https://github.com/minikozort/Password-Regex-Tutorial.git"
+  },
+  {
     title: "Full-Stack App",
     link: "https://tech-blog-mvc-e0ny.onrender.com",
     imgSrc: MVCMainPage,
@@ -51,7 +62,22 @@ const individualProjects = [
     imgSrc: MyFriendNetwork,
     imgAlt: "My Friend's Network",
     github: "https://github.com/minikozort/My-Friend-s-Network.git"
-  }  
+  },
+  {
+    title: "PWA - IndexedDB - Service Worker",
+    link: "https://text-editor-again.onrender.com/",
+    imgSrc: Jade,
+    imgAlt: "Text-Editor",
+    github: "https://github.com/minikozort/Text-Editor-Again.git"
+  },
+  {
+    title: "React.js - Express - Node.js",
+    link: "https://book-search-pz3d.onrender.com",
+    imgSrc: BookSearch,
+    imgAlt: "Book Search",  
+    github: "https://github.com/minikozort/Book-Search.git"
+  }
+  
 ];
 
 // Array of group projects with their details
@@ -69,6 +95,13 @@ const groupProjects = [
     imgSrc: CryptoCurrently,
     imgAlt: "Crypto Currently",
     github: "https://github.com/wilsacker/Crypto-Currently.git"
+  },
+  {
+    title: "Full-Stack App with React-Apollo-NoSQL",
+    link: "https://taste-voyage.onrender.com",
+    imgSrc: TasteVoyage,
+    imgAlt: "Taste-Voyage",
+    github: "https://github.com/ekookten/Taste-Voyage"
   }
 ];
 
