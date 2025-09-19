@@ -49,7 +49,7 @@ export default function Resume() {
           <li>
             <a
               className="download-link"
-              href="https://docs.google.com/document/d/1Kdf7P_BoB_imecpKSFnVSKwZ-k5KrSef/edit?usp=drive_link&ouid=113478191430447452414&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/1tr7-36QPmStgYDY69mZBk1LlICV8tRee/edit?usp=drive_link&ouid=113478191430447452414&rtpof=true&sd=true"
               download
             >
               Download Resume
